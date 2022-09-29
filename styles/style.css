@@ -72,13 +72,15 @@ div#form > p {
 }
 
 form > div.campo {
+  background-color: #5f2c82;
+
   display: block;
   width: 100%;
-
-  background-color: #5f2c82;
+  height: 40px;
 
   margin: 5px 0px;
   border-radius: 8px;
+  border: 2px solid #5f2c82;
 }
 
 div.campo > label {
@@ -87,7 +89,7 @@ div.campo > label {
 
 div.campo > i {
   color: white;
-  background-color: black;
+  /* background-color: black; */
   font-size: 2em;
   width: 40px;
   padding: 5px;
@@ -95,13 +97,20 @@ div.campo > i {
 
 div.campo > input {
   background-color: #94cfcd;
-  font-size: 1em;
-  width: calc(100% - 44px);
+
+  width: calc(99.8% - 44px);
   height: 100%;
+
+  font-size: 1em;
   border: 0px;
   border-radius: 8px;
   padding: 4px;
-  transform: translateY(-10px);
+
+  transform: translateY(-13px);
+}
+
+div.campo > input:focus-within {
+  background-color: white;
 }
 
 form > input[type='submit'] {
